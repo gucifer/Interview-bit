@@ -1,0 +1,11 @@
+char* longestCommonPrefix(char** A, int n1) {
+    int i=strlen(A[0]),j=1,k=0,l;
+    for(j=1;j<n1;j++){
+        for(k=0;k<(l>i)?i:(l=strlen(A[j]));k++)
+            if(A[j-1][k]!=A[j][k]) break;
+        i=(i<=k)?i:k;
+    }
+    char *B=(char *)malloc(i*sizeof(char));
+    for(k=0;k<i;k++)  B[k]=A[0][k]; B[k]='\0';
+     return B;
+}

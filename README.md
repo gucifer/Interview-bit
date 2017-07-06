@@ -1,2 +1,2 @@
-# Interview-bit
-a bunch of interview bit questions I solved
+# InterviewBit
+This is just a bit of all my solutions of this really cool website
